@@ -1,0 +1,30 @@
+.side img{
+    width: 45px;
+    height: 45px;
+}
+.side .menu{
+    margin-top: 10px;
+}
+
+.side .menu ul{
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    background-color: rgba(255,255,255,0.7);
+    backdrop-filter: blur(50px);
+    border:3px black solid;
+    border-radius: 10px;
+    width: 170px;
+}
+
+.side ul a{
+    margin:0;
+    color:black;
+    font-size:15px;
+    font-weight: none;
+    padding: 15px 0;
+}
+.side ul a:hover{
+    color:red;
+    font-weight: none;
+}

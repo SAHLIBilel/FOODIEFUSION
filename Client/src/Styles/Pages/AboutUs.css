@@ -1,0 +1,10 @@
+.Aviss{
+    display: flex;
+    flex-direction: row;
+}
+@media  screen and (max-width:600px) {
+    .Aviis{
+        flex-direction:column;
+    }
+    
+}

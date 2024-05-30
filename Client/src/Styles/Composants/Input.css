@@ -1,0 +1,18 @@
+#Input{
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: left;
+    margin-left: 5px;
+}
+#Input label{
+    font-size: bold;
+    margin: 0px;
+}
+#Input input{
+    width: 200px;
+    height: 30px;
+    border: 3px black solid ;
+    border-radius: 20px;
+    margin: 0px;
+}

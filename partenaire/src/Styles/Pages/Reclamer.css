@@ -1,0 +1,56 @@
+.reclamer {
+    width: 300px;
+    padding: 10px 25px;
+    margin: 60px auto;
+    border: 1px solid #ccc;
+    border-radius: 5px;
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+    background-color: #f9f9f9;
+}
+
+.reclamer p {
+    font-size: 24px;
+    font-weight: bold;
+    text-align: center;
+    margin-bottom: 20px;
+}
+
+.reclamer form {
+    display: flex;
+    flex-direction: column;
+}
+#home-button{
+    position: absolute;
+    right: 0;
+    margin-top:15px;
+    margin-right:20px;
+    width: 100px;
+    height: 40px;
+}
+.reclamer label {
+    margin-bottom: 5px;
+    font-weight: bold;
+}
+
+.reclamer input[type="text"],
+.reclamer input[type="email"],
+.reclamer input[type="number"],
+.reclamer input[type="password"] {
+    padding: 10px;
+    margin-bottom: 15px;
+    border: 1px solid #ccc;
+    border-radius: 5px;
+}
+
+.reclamer input[type="submit"] {
+    padding: 10px;
+    background-color: #C18845;;
+    color: #fff;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+}
+
+.reclamer input[type="submit"]:hover {
+    background-color: #0056b3;
+}

@@ -1,0 +1,53 @@
+.Partenariat {
+  display: flex;
+  flex-direction: column;
+  background-image: url("/src/Images/promotions-bg.png");
+  background-color: black;
+}
+.Partenariat .Titre {
+  color: white;
+  font-size: 30px;
+  font-weight: bold;
+  align-self: center;
+}
+.Partenariat .Button {
+  margin: 5px;
+  width: 150px;
+  height: 50px;
+  border: 2px white solid;
+  background-color: white;
+  color: black;
+  font-size: 18px;
+  font-weight: bold;
+  border-radius: 20px;
+  padding: 5px;
+  transition: all 300ms linear;
+  align-self: center;
+}
+.Partenariat .Button:hover {
+  background-color: black;
+  color: white;
+  font-weight: bold;
+}
+.Types {
+  display: flex;
+  flex-direction: row;
+  flex-wrap: wrap;
+  justify-content: space-around;
+}
+.Types div {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  margin-bottom: 15px;
+}
+.Types img {
+  width: 300px;
+  height: 300px;
+  border-radius: 90px 200px 120px 160px;
+}
+.Types div p {
+  font-size: 20px;
+  color: white;
+}

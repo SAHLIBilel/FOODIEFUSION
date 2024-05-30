@@ -1,0 +1,121 @@
+/* Base styles for Section 1 */
+.Section_1 {
+    margin: 0;
+    width: 100%;
+    height: 90vh;
+    display: flex;
+    flex-direction: row;
+    background-color: black;
+    background-image: url('/src/Images/banner-bg-two.png');
+    background-position: center;
+    background-size: cover;
+    background-repeat: no-repeat;
+}
+
+/* Styles for the left side of Section 1 */
+.section_1_1 {
+    color: white;
+    width: 50%;
+    height: 100%;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+}
+
+/* Title styles within section_1_1 */
+.section_1_1 .titre {
+    font-size: clamp(40px, 60px, 65px);
+    font-weight: bold;
+    margin: 0;
+}
+
+/* Slogan styles within section_1_1 */
+.section_1_1 .slogant {
+    font-size: clamp(20px, 25px, 45px);
+    align-self: center;
+}
+.section_1_1 .slogant span {
+    color:red;
+}
+
+/* Styles for the Get Started button within section_1_1 */
+.section_1_1 .get_Started {
+    width: 110px;
+    height: 40px;
+    border: 2px white solid;
+    background-color: white;
+    color: black;
+    font-weight: bold;
+    border-radius: 20px;
+    padding: 5px;
+    margin: 3px;
+    transition: all 300ms linear;
+}
+
+.section_1_1 .get_Started:hover {
+    background-color: red;
+    color: white;
+}
+
+/* Styles for the right side of Section 1 */
+.section_1_2 {
+    width: 50%;
+    height: 100%;
+    border: 3px white solid;
+}
+
+/* Media queries for responsive adjustments */
+@media only screen and (max-width: 767px) {
+    /* Adjustments for screens smaller than 768px */
+    .Section_1 {
+        flex-direction: column;
+        height: 50vh;
+        backdrop-filter: blur(200px);
+
+    }
+
+    .section_1_1,
+    .section_1_2 { /* Assuming you want .section_1_2 also to adjust its width */
+        width: 100%;
+        height: 100%;
+    }
+    .section_1_1 .titre {
+        font-size: 30px;
+        font-weight: bold;
+        margin: 0;
+    }
+    .section_1_1 .slogant {
+        font-size: clamp(7px, 15px, 25px);
+    }
+    .section_1_1 .slogant span {
+        color:red;
+    }
+}
+
+@media only screen and (max-width: 1100px) and (min-width: 768px) {
+    /* Adjustments for screens between 768px and 1100px */
+    .Section_1 {
+        flex-direction: column;
+        height: 50vh;
+        backdrop-filter: blur(200px);
+
+        
+    }
+
+    .section_1_1 {
+        width: 100%;
+        height: 100%;
+    }
+
+    .section_1_1 .slogant {
+        font-size: clamp(10px, 35px, 45px);
+    }
+    .section_1_1 .slogant span {
+        color:red;
+    }
+
+    .section_1_1 .titre {
+        font-size: clamp(10px, 45px, 55px);
+    }
+}

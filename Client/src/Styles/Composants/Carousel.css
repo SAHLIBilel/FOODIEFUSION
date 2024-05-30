@@ -1,0 +1,38 @@
+.carousel {
+    background-color: #f4f4f4;
+    border-radius: 8px;
+    padding: 20px;
+    margin: 20px auto;
+    width: 80%;
+    box-shadow: 0 4px 8px rgba(0,0,0,0.1);
+  }
+  
+  .carousel h2 {
+    text-align: center;
+    color: #333;
+  }
+  
+  .avis-container {
+    display: flex;
+    justify-content: space-around; /* Centre et donne de l'espace autour des avis */
+    flex-wrap: wrap; /* Permet aux avis de se positionner en dessous l'un de l'autre sur les petits écrans */
+  }
+  
+  .avis {
+    flex: 1 1 45%; /* Chaque avis prend environ 45% du conteneur, avec une flexibilité pour s'ajuster */
+    margin: 10px;
+    padding: 20px;
+    background-color: white;
+    border-radius: 5px;
+    box-shadow: 0 2px 4px rgba(0,0,0,0.05);
+    font-size: 16px;
+    color: red;
+    text-align: center;
+  }
+  
+  @media (max-width: 600px) {
+    .avis {
+      flex-basis: 90%; /* Sur les petits écrans, chaque avis prend presque toute la largeur du conteneur */
+    }
+  }
+  

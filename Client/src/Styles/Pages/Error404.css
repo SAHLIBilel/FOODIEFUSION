@@ -1,0 +1,16 @@
+/* Error404.css */
+.error-container {
+    text-align: center;
+    margin-top: 100px;
+  }
+  
+  .error-container h1 {
+    font-size: 48px;
+    color: #ff0000;
+  }
+  
+  .error-container p {
+    font-size: 24px;
+    color: #333;
+  }
+  

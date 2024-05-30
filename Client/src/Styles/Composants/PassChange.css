@@ -1,0 +1,12 @@
+.pre , #pre{
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    margin:10px
+}
+#pre{
+    width: 80%;
+    align-items: center;
+    margin: auto;
+}

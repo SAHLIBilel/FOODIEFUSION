@@ -1,0 +1,131 @@
+/* Styles de base pour la page d'accueil */
+#Accueil {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    margin-top: 20px;
+}
+
+#fonctions {
+    display: flex;
+    flex-direction: row;
+    margin-top: 80px;
+    justify-content: space-around;
+    width: 70%;
+    flex-wrap: wrap; /* Permet aux éléments de passer à la ligne si nécessaire */
+}
+
+#fonctions .button {
+    border: 3px black solid;
+    border-radius: 10px;
+    width: 250px;
+    padding: 10px;
+    background-color: #F0BE86; /* Couleur de fond par défaut */
+    color: #5D7052; /* Couleur du texte */
+    cursor: pointer;
+    transition: background-color 0.3s ease, transform 0.2s ease;
+    margin: 10px; /* Ajout d'une marge pour espacer les boutons */
+}
+
+#fonctions .button:hover {
+    background-color: #C18845; /* Couleur de fond au survol */
+    transform: scale(1.05); /* Augmente légèrement la taille */
+}
+
+#fonctions .button:active {
+    background-color: #5D7052; /* Couleur de fond au clic */
+    transform: scale(0.95); /* Réduit légèrement la taille */
+}
+
+h1 {
+    font-size: 50px;
+    color: #5d7052;
+}
+#func{
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+}
+#func p{
+    font-size: 20px;
+}
+.deconnexion-button {
+    display: inline-block;
+    align-self: end;
+    margin-right: 20px;
+    padding: 10px 20px;
+    font-size: 16px;
+    font-weight: bold;
+    color: #FFFFFF;
+    background-color: #C18845; /* Utilisez une des couleurs spécifiées */
+    border: 2px solid #C18845;
+    border-radius: 10px;
+    cursor: pointer;
+    transition: background-color 0.3s, transform 0.2s;
+}
+
+.deconnexion-button:hover {
+    background-color: #f00; /* Une autre couleur pour le survol */
+    border-color: #5D7052;
+}
+
+.deconnexion-button:active {
+    background-color: #3B4A34; /* Une couleur plus foncée pour l'activation */
+    border-color: #3B4A34;
+    transform: scale(0.98); /* Légère réduction de taille pour effet de clic */
+}
+
+/* Responsivité pour les petits écrans */
+@media (max-width: 768px) {
+    .deconnexion-button {
+        width: 100%;
+        font-size: 14px;
+        padding: 8px 16px;
+    }
+}
+
+/* Media queries pour rendre la mise en page responsive */
+@media (max-width: 1200px) {
+    #fonctions {
+        width: 90%;
+        margin-top: 30px;
+
+    }
+
+    h1 {
+        font-size: 45px;
+        margin: 10px;
+    }
+}
+
+@media (max-width: 768px) {
+    #fonctions {
+        flex-direction: column;
+        align-items: center;
+        width: 100%;
+        margin-top: 30px;
+    }
+
+    #fonctions .button {
+        width: 80%;
+    }
+
+    h1 {
+        font-size: 40px;
+        margin: 10px;
+    }
+}
+
+@media (max-width: 480px) {
+    h1 {
+        font-size: 35px;
+        margin: 10px;
+    }
+
+    #fonctions .button {
+        width: 90%;
+        margin-top: 30px;
+
+    }
+}

@@ -1,0 +1,135 @@
+.Login *,
+.SignUp * {
+  color: white;
+}
+#error{
+  margin: 0;
+  color:red;
+  font-weight: bolt;
+}
+.Login,
+.SignUp {
+  background-color: transparent;
+  background-image: url("/src/Images/Footers-bg.png");
+  background-attachment: fixed;
+  background-position: center;
+  background-repeat: no-repeat;
+  background-size: cover;
+  width: 100%;
+  height: 90vh;
+  display: flex;
+  flex-direction: row;
+  justify-content: center;
+  align-items: center;
+}
+.Login_div,
+.SignUp_div {
+  display: flex;
+}
+.social {
+  color: white;
+  width: 250px;
+  height: 530px;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  margin: 50px 0px;
+  backdrop-filter: blur(25px);
+  background-color: rgba(255, 255, 255, 0.3);
+  border-radius: 20px 0 0 20px;
+}
+.social img {
+  width: 120px;
+  height: 120px;
+}
+.social .Social_Logos img,
+.traditionnelle .Social_Logos img {
+  width: 50px;
+  height: 50px;
+  margin: 5px;
+}
+.traditionnelle {
+  backdrop-filter: blur(25px);
+  background-color: rgba(255, 255, 255, 0.3);
+  width: 320px;
+  height: 530px;
+  margin: 50px 0px;
+  border-left: 2px white solid;
+  border-radius: 0 20px 20px 0;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+}
+.traditionnelle .titre {
+  font-size: 35px;
+  font-weight: bold;
+  margin: 0;
+  color: red;
+}
+.traditionnelle .P_Compte,
+.traditionnelle .Social_Login {
+  font-size: 14px;
+  margin: 15px 0;
+}
+a:hover {
+  color: red;
+  font-weight: bold;
+  text-decoration: underline;
+}
+#P_Oubliée {
+  margin: 5px 0 0 0;
+}
+.traditionnelle .Social_Login,
+.traditionnelle .Social_Logos {
+  display: none;
+}
+.traditionnelle input[type="submit"] {
+  width: 110px;
+  height: 40px;
+  border: 2px white solid;
+  background-color: white;
+  color: black;
+  font-weight: bold;
+  border-radius: 20px;
+  padding: 5px;
+  margin: 10px;
+  transition: all 300ms linear;
+}
+.traditionnelle input[type="submit"]:hover {
+  background-color: red;
+  font-weight: bold;
+}
+.traditionnelle input {
+  height: 40px;
+  width: 200px;
+  margin: 7px 0;
+  padding: 10px;
+  border-radius: 10px;
+  border: 2px white solid;
+  color: black;
+}
+.NoPr {
+  display: flex;
+  flex-direction: row;
+}
+.NoPr input {
+  width: 90px;
+  margin: 7px 10px;
+}
+
+@media only screen and (max-width: 600px) {
+  .traditionnelle .Social_Login,
+  .traditionnelle .Social_Logos {
+    display: block;
+  }
+  .social {
+    display: none;
+  }
+  .traditionnelle {
+    border-radius: 20px;
+    border-left: 0;
+    height: 650px;
+  }
+}

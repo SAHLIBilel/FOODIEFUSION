@@ -1,0 +1,81 @@
+.App {
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+    background-color: #F5F5DC;
+    background-image: url(/src/Images/from.png);
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: cover;
+    height: 500px;
+}
+.App div {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    padding: 20px;
+    margin: 0;
+    color: black;
+}
+.App div h1, .App div h3 {
+    margin: 10px;
+}
+.App #stores {
+    display: flex;
+    flex-direction: row;
+}
+.App #stores button {
+    margin: 10px;
+    width: 200px;
+    height: 55px;
+    border-radius: 50px;
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+    font-size: 18px;
+}
+.App #stores button img {
+    width: 30px;
+}
+.App #stores #Applestore {
+    background-color: black;
+    color: white;
+}
+.App #stores #Googleplay {
+    background-color: white;
+    color: black;
+}
+.App img {
+    margin: 0;
+    width: 40%;
+    height: 90%;
+}
+@media screen and (max-width: 767px) {
+    .App {
+        height: auto;
+        flex-direction: column;
+        justify-content: center;
+        align-items: center;
+    }
+
+    .App #stores {
+        flex-direction: column;
+    }
+
+    .App #stores button {
+        margin: 10px;
+        width: 170px;
+        height: 55px;
+        border-radius: 50px;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        font-size: 14px; 
+    }
+
+    .App img {
+        margin: 20px 0; 
+        width: 100%; 
+    }
+}

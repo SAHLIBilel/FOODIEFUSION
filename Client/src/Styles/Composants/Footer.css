@@ -1,0 +1,44 @@
+.Footer {
+  display: flex;
+  flex-direction: row;
+  justify-content: space-between;
+  align-items: center;
+  flex-wrap: wrap;
+  border-top: 3px black solid;
+  align-self: flex-end;
+  bottom: 0;
+  width: 100%;
+}
+.Footer p {
+  padding: 3px;
+  margin-left: 5px;
+  font-size: 10px;
+  font-weight: bold;
+}
+.Footer .part_2 p {
+  font-size: 17px;
+  align-self: center;
+}
+@media screen and (max-width: 600px) {
+  .Footer .part_1 {
+    display: none;
+  }
+  .Footer .part_2 p,
+  .Footer .part_3 {
+    font-size: 12px;
+    color: red;
+    font-weight: bold;
+  }
+  .Footer {
+    background-color: black;
+    flex-wrap: wrap-reverse;
+    justify-content: center;
+  }
+  .Footer .part_3 {
+    padding: 0 15px;
+    display: flex;
+    flex-direction: row-reverse;
+    align-items: center;
+    justify-content: space-around;
+  }
+}

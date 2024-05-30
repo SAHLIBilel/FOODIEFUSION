@@ -1,0 +1,34 @@
+.Avis{
+    width: 250px;
+    height: 350px;
+    display: flex;
+    flex-direction: column;
+    background-color: white;
+    border:3px black solid;
+    border-radius: 25px;
+    margin:20px auto;
+}
+.Avis #img_contain{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    width: 100%;
+    height: 50%;
+    border-radius: 20px;
+    background-color: blue;
+}
+.Avis #img_contain img {
+    width: 150px;
+    height: 150px;
+    border: 3px black solid ;
+    border-radius: 50%;
+    padding:10px;
+    background-color: white;
+    margin: 50px;
+
+}
+.Avis #msg_contain{
+    padding: 15px;
+    height: 50%;
+
+}

@@ -1,0 +1,28 @@
+.Membre{
+    display:flex;
+    flex-direction: row-reverse;
+    background-image: url(/src/Images/Footers-bg.png);
+    color:white;
+    justify-content: center;
+    align-items: center;
+}
+.Membre #Membre{
+    margin:20px 30px;
+}
+.Membre h1{
+    font-weight: bold;
+    color:#F5F5DC;
+}
+.Membre .Steps{
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+}
+
+@media screen and (max-width:600px) {
+
+    .Membre #Membre{
+        display: none;
+    } 
+}

@@ -1,0 +1,30 @@
+.Histoire{
+    display: flex;
+    padding: 40px;
+    justify-content: center;
+    align-items: center;
+    background-color: #F5F5DC;
+}
+.Histoire #text{
+    margin:0 100px;
+    background-image: url(/src/Images/from.png);
+}
+.Histoire #text h1{
+    color:red;
+    font-weight: bold;
+}
+@media only screen and (max-width:600px){
+    .Histoire{
+        flex-direction: column;
+        padding: 10px;
+    }
+    .imgs{
+        width: 400px;
+    }
+    .Histoire #text{
+        margin:0 20px;
+    }
+    .Histoire #text h1{
+        font-size:30px;
+    }
+}
